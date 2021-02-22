@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#0AA37D"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:textSize="20sp"
+        android:layout_marginTop="128dp"
+        android:hint="@string/email"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/edit_email"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/senha"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#08AD7F"
+        android:layout_below="@+id/edit_password"
+        android:layout_marginTop="32dp"
+        android:textColor="#0AA37D"
+        android:layout_margin="8dp"
+        android:text="@string/login"/>
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="@string/ainda_n_o_cadastrado_cadastre_se"/>
+
+</RelativeLayout>

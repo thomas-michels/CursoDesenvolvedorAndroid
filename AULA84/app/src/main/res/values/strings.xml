@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aula84</string>
+    <string name="ainda_n_o_cadastrado_cadastre_se">Ainda não é cadastrado? Cadastre-se!</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+</resources>
