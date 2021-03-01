@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="@color/brown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ic_back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/text_cappuccino"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cappuccino"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_top"
+        app:layout_constraintBottom_toBottomOf="@id/view_top" />
+
+    <ImageView
+        android:id="@+id/image_timer"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_baseline_access_time_24"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/image_favorite"
+        app:layout_constraintTop_toBottomOf="@id/view_top" />
+
+    <TextView
+        android:id="@+id/text_timer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/minutes"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintLeft_toLeftOf="@id/image_timer"
+        app:layout_constraintRight_toRightOf="@id/image_timer"
+        app:layout_constraintTop_toBottomOf="@+id/image_timer" />
+
+    <ImageView
+        android:id="@+id/image_favorite"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@id/image_timer"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_top" />
+
+    <TextView
+        android:id="@+id/text_likes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="54214"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/image_favorite"
+        app:layout_constraintRight_toRightOf="@id/image_favorite"
+        app:layout_constraintTop_toBottomOf="@id/image_favorite" />
+
+    <View
+        android:id="@+id/viewSeparator"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="@color/brown"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintTop_toTopOf="@+id/text_timer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/viewSeparator"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textIngredients"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredientes"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageArrowAdvance1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_forward"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/textIngredients"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/textIngredient1"/>
+
+    <TextView
+        android:id="@+id/textIngredient1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dose"
+        android:textSize="16sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textIngredients"
+        app:layout_constraintLeft_toRightOf="@id/imageArrowAdvance1"/>
+
+    <ImageView
+        android:id="@+id/imageArrowAdvance2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_forward"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/textIngredient1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/textIngredient2"/>
+
+    <TextView
+        android:id="@+id/textIngredient2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_100ml_leite"
+        android:textSize="16sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textIngredient1"
+        app:layout_constraintLeft_toRightOf="@id/imageArrowAdvance2"/>
+
+    <ImageView
+        android:id="@+id/imageArrowAdvance3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_forward"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/textIngredient2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/textIngredient3"/>
+
+    <TextView
+        android:id="@+id/textIngredient3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_1_colher_de_chocolate_em_p"
+        android:textSize="16sp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textIngredient2"
+        app:layout_constraintLeft_toRightOf="@id/imageArrowAdvance3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

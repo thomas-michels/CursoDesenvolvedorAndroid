@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AULA105</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="description">Uma simples e perfeitamente extraída dose de expresso misturado com leite fresco e chocolate fazem esta bebida deliciosa.</string>
+    <string name="minutes">15 minutos</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="dose">1 dose expresso</string>
+    <string name="_100ml_leite">100ml leite</string>
+    <string name="_1_colher_de_chocolate_em_p">1 colher de chocolate em pó</string>
+</resources>
