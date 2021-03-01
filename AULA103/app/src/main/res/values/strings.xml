@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="email">Email</string>
+    <string name="ainda_n_o_cadastrdo_cadastre_se">Ainda não é cadastrado? Cadastre-se!</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="loginInvalido">Login invalido</string>
+    <string name="feliz_2_meses">Feliz 2 meses</string>
+    <string name="text1">Oi amor, mais um mês se passou e cada dia eu te amo mais e mais, estou muito feliz por estar junto com você, você ne faz feliz todos os dias, ouve os meus problemas e sempre tenta ajudar como pode. Quero te fazer a mulher mais feliz desse mundo e sempre estarei junto com você para o que der e vier.</string>
+    <string name="text2">Fiz um presente diferenciado pra você, espero que tenha gostado, pois deu um trabalhinho pra fazer.</string>
+    <string name="text3">Com amor Thomas</string>
+</resources>
