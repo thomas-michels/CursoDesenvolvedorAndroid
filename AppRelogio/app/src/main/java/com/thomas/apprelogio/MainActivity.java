@@ -13,6 +13,9 @@ import android.os.SystemClock;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.Calendar;
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
     private ViewHolder mViewHolder = new ViewHolder();
@@ -46,12 +49,24 @@ public class MainActivity extends AppCompatActivity {
 
     private void startClock() {
 
+        Calendar calendar = Calendar.getInstance();
+
         this.mRunnable = new Runnable() {
             @Override
             public void run() {
 
+                calendar.setTimeInMillis(System.currentTimeMillis());
+                int hour = calendar.get(Calendar.HOUR_OF_DAY);
+                int minutes = calendar.get(Calendar.MINUTE);
+                int seconds = calendar.get(Calendar.SECOND);
+
+                // %d = converter inteiro em string - 02 = casas decimais
+                mViewHolder.textHourMinute.setText(String.format(Locale.getDefault(),"%02d:%02d", hour, minutes));
+
+                mViewHolder.textSeconds.setText(String.format(Locale.getDefault(),"%02d", seconds));
+
                 long now = SystemClock.elapsedRealtime();
-                long next = 1000 + (1000 - (now % 1000));
+                long next = now + (1000 - (now % 1000));
 
                 mHandler.postAtTime(mRunnable, next);
             }
